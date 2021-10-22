@@ -12,7 +12,7 @@ namespace MyNotePad
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1 ()
         {
             InitializeComponent();
         }
@@ -20,6 +20,12 @@ namespace MyNotePad
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 fr = new Form1();
+            fr.Show();
         }
     }
 }
